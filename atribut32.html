@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atribute and nth child pesudo code</title>
+    <style>
+        h1{
+            background-color: red;
+            display: block;
+            text-align: center;
+        }
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto; 
+        }
+        .item{
+            border: 2px solid rgb(213, 7, 141);
+        }
+        input{
+            display: block;
+        }
+        /* input[type]{
+            border: 2px solid brown;
+            background-color: aquamarine;
+            border-radius: 3px;
+        } */
+        input[type='text']{
+            border: 2px solid brown;
+            background-color: aquamarine;
+            border-radius: 3px;
+
+        }
+        /* a[target]{
+            font-size: 44px;
+            color: pink;
+        } */
+        a[target='_self']{
+            font-size: 44px;
+            color: pink;
+        }
+        /* li:nth-child(2n+1){
+            background-color: rgb(17, 17, 226);
+        } */
+        li:nth-child(odd){
+            background-color: green;
+        }
+        li:nth-child(even){
+            background-color: rgb(223, 115, 14);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>atribute and nth child pesudo code</h1>
+    <div class="container">
+        <h2><a href="http://google.com" target="_blank">go to google</a></h2>
+        <h2><a href="http://facebook.com" target="_self">go to facebook</a></h2>
+
+        <form action="" class="form_control">
+            <input type="text" placeholder="enter your name">
+            <input type="gmail" placeholder="enter your mail id">
+            <input type="password" placeholder="enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+            <li class="item" id="item-6">item6</li>
+            <li class="item" id="item-7">item7</li>
+            <li class="item" id="item-8">item8</li>
+            <li class="item" id="item-9">item9</li>
+            <li class="item" id="item-10">item10</li>
+            <li class="item" id="item-11">item11</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

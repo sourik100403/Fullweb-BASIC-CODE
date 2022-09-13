@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quries</title>
+    <style>
+        .box{
+            border:2px solid red;
+            color: black;
+            background-color: beige;
+            font-size: 70px;
+            text-align: center;
+            display: none;
+        }
+        @media only screen and (max-width:300px){
+            #box-1{
+                display: block;
+                background-color: greenyellow;
+            }
+        }
+
+        @media only screen and (min-width:400px) and (max-width:800px){
+            #box-2{
+                display: block;
+                background-color: rgb(211, 19, 179);
+            }
+        }
+
+        @media only screen and (min-width:800px) and (max-width:1200px){
+            #box-3{
+                display: block;
+                background-color: rgb(67, 23, 169);
+            }
+        }
+
+        @media only screen and (min-width:1200px) and (max-width:1600px){
+            #box-4{
+                display: block;
+                background-color: rgb(223, 154, 25);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">i am a phone</div>
+    <div class="box" id="box-2">i am a tablet</div>
+    <div class="box" id="box-3">i am a computer</div>
+    <div class="box" id="box-4">i am a super computer</div>
+    
+</body>
+</html>

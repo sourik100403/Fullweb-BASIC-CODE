@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setinterval and settimeout</title>
+</head>
+<body>
+    <div class="container">
+        this is tute 58<span id="time"></span>
+    </div>
+    <script>
+        function greet(name,bytext){
+            console.log("good moring"+name+" "+bytext);
+        }
+        // greet("sourik","bye");
+        // timeout=setTimeout(greet,5000,"sourik","bye");
+        // console.log(timeout);
+        // clearTimeout(timeout);
+
+        // intervalid=setInterval(greet,2000,"sourik","ok");
+        // clearInterval(intervalid);
+
+        function displaytime(){
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+
+        }
+        setInterval(displaytime, 1000);
+        
+    </script>
+</body>
+</html>
+

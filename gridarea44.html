@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid area in css</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar       navbar      navbar      navbar'
+        'section section section  asid'
+        'footer footer footer footer';
+    }
+    .item{
+        border: 2px solid red;
+        background-color: aqua;
+        padding:24px
+    }
+    #navbar{
+        grid-area: navbar;
+    }
+    #section{
+        grid-area: section;
+    }
+    #asid{
+        grid-area: asid;
+    }
+    footer{
+        grid-area: footer;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            home  about  contract us 
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, officia! Nesciunt architecto maiores beatae itaque? Saepe velit modi commodi tempore similique natus placeat quidem ad alias ipsam! Qui, sed incidunt?
+        </div>
+        <div id="asid" class="item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora quia excepturi numquam.
+        </div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, perspiciatis eligendi quia neque ex vero molestias quis quam minima et facilis temporibus, illum nemo alias ipsam iure officia tempore voluptate?</footer>
+    </div>
+</body>
+</html>

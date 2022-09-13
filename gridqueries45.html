@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid + queries</title>
+</head>
+<style>
+    body {
+        background-color: rgb(241, 144, 15);
+    }
+
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+    }
+
+    @media only screen and (max-width:300px) {
+        body {
+            background-color: red;
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        aside {
+            display: none;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media only screen and (min-width:300px) and (max-width:500px) {
+        body {
+            background-color: rgb(48, 172, 65);
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        aside {
+            display: none;
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (min-width:500px) and (max-width:800px) {
+        body {
+            background-color: rgb(185, 197, 19);
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        span {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    @media (min-width:800px) {
+        body {
+            background-color: rgb(190, 13, 102);
+        }
+
+    }
+
+    .bdr {
+        border: 2px solid black;
+        background-color: antiquewhite;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    nav {
+        grid-area: navbar;
+    }
+
+    section {
+        grid-area: section;
+    }
+
+    aside {
+        grid-area: aside;
+    }
+
+    footer {
+        grid-area: footer;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>home</span>
+            <span>about</span>
+            <span>contract</span>
+        </nav>
+        <section class="bdr">
+            <h1>learn css</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ratione dolorem totam, quas minima at itaque quod cumque dicta delectus fuga aliquam ducimus consequatur eos quasi harum ea optio laboriosam?</p>
+
+        </section>
+        <aside class="bdr">
+            <h2>more about css</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, distinctio deleniti. Perferendis inventore eveniet voluptates distinctio facere? Numquam, nesciunt explicabo velit laboriosam omnis ad dolorem modi voluptas nihil! Labore, fugit?</p>
+
+        </aside>
+    </div>
+    <footer class="bdr">copy rigth sourik 2022</footer>
+
+</body>
+
+</html>

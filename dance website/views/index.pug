@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    title Sourik Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navber 
+       ul 
+         div#logo
+            img(src="/static/logo.jpg")
+            |HDA
+         li #[a(href="/") Home]
+         li #[a(href="/") About]
+         li #[a(href="/") Services]
+         li #[a(href="/") Contact] 
+         li #[a(href="/") More Info ]
+    section#introsection 
+        div Wellcome To Sourik's Dance Academy 
+        div.small Eat Sleep Dance Repeat 
+    section#mission 
+        h2 our mission
+
+        div.card
+          h3 Dance Perfection 
+          div.card-box
+            div.card-img 
+                img(src="/static/1.png")
+            div.card-content
+                | This is the best dance academy of the universe
+
+        div.card
+          h3 Dance The Way You Like
+            div.card-box
+              div.card-img 
+                img(src="/static/2.png")
+              div.card-content
+                | This is the best dance academy of the universe
+
+        div.card
+          h3 Expert Teaching
+            div.card-box
+              div.card-img 
+                img(src="/static/3.png")
+              div.card-content
+                | This is the best dance academy of the universe
+    section#introsectionsponser 
+        div.sponser 
+          h2 our sponser
+          img(src = "/static/logo1.png" alt = "sponser image" class="spimage")
+          img(src = "/static/logo2.png" alt = "sponser image" class="spimage")
+          img(src = "/static/logo3.png" alt = "sponser image" class="spimage")
+          img(src = "/static/logo4.png" alt = "sponser image" class="spimage")
+
+    footer#footer 
+        | Copyright © 2022 sourikAcademy.com | All Rights Reserved   
+script
+    include ../static/index.js

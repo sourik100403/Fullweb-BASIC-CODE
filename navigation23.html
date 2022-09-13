@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIGATION CONTROL BAR</title>
+    <style>
+        .navbar{
+            background-color: black;
+            color: brown;
+            border-radius: 4px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none;
+            margin: 6px 5px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .search{
+            float:right;
+            color: blueviolet;
+            padding: 5px 7px;
+        }
+        .navbar input{
+            border-bottom-right-radius: 3px solid red;
+            border-radius: 3px;
+            padding: 6px 4px;
+            width: auto;
+        }
+        .navbar li a:hover{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">contract us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this web side">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

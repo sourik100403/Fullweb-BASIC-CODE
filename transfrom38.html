@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transfrom in css</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container{
+        height: 80vh;
+        background-color: brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
+        border: 2px solid red;
+        border-radius: 15px;
+        height: 300px;
+        width: 300px;
+        transition: all 0.5s ease-in-out;
+    }
+    .box:hover{
+        /* transform: rotate(360deg); */
+        /* transform: skew(45deg); */
+        /* transform: scale(2); */
+        transform:perspective(500px) translate3d(42px,-63px)
+    }
+
+</style>
+<body>
+    <h3>this is a transfrom in css</h3>
+    <div class="container">
+        <div class="box">
+            this is a box
+        </div>
+    </div>
+    
+</body>
+</html>

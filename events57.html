@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<style>
+    #btn{
+        padding: 10px 14px;
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>this is a heading</h1>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos debitis id fuga temporibus natus? Hic molestiae omnis, voluptas reiciendis commodi nam autem, fugiat adipisci consectetur animi repellendus non nobis sapiente est? Necessitatibus eligendi et repudiandae aliquid facilis saepe corrupti illum, exercitationem, ea quia quod provident magnam modi hic porro quo, tenetur ipsum reprehenderit minima! Unde voluptates ullam repudiandae quia natus, ratione perspiciatis ipsam necessitatibus suscipit eaque dicta aliquid deserunt aliquam iusto! Sit minima in ab tempore, molestias est corporis neque fugit distinctio animi quod obcaecati quidem asperiores consequuntur et doloremque architecto provident, autem consectetur expedita error aut soluta, eum reprehenderit! Et quod eos placeat qui quaerat. Illum, qui ea sed consequatur dolore nulla recusandae iusto voluptate quidem ullam nemo labore atque! Doloribus ipsum et, ex aut debitis voluptates consequuntur! Ex, non libero labore error harum ducimus dolore. Necessitatibus velit molestias accusantium perferendis doloribus possimus non animi numquam saepe, labore doloremque! Alias, dolore dolorum aliquam repellendus, nam omnis dolores ipsum laboriosam sunt ex amet debitis in eaque velit incidunt ipsam doloremque explicabo voluptate est voluptatibus ducimus? Ea blanditiis ipsam, modi consequuntur, soluta odit, minus perferendis aperiam quisquam sapiente magni? Itaque accusantium iste at est, necessitatibus quia modi tenetur, deserunt, minima dolorum nihil. Quos, debitis quae? Quidem iure aspernatur sequi sunt blanditiis. Dolor quas omnis molestias error explicabo accusamus dolorem officia dolores eveniet eaque, nesciunt atque eum rem ad aperiam distinctio, quisquam nulla reiciendis modi.</p>
+    </div>
+    <button id="btn" onclick="toggelhide()">show/hide</button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            console.log("mouse inside");
+        });
+
+        para.addEventListener('mouseout',function run(){
+            console.log("mouse outside");
+        });
+
+        function toggelhide(){
+            let para=document.getElementById('para');
+            let btn=document.getElementById('btn');
+            if(para.style.display!='none'){
+                para.style.display='none';
+            }
+            else{
+                para.style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>

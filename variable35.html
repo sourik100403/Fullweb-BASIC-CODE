@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable/custorm poraties</title>
+    <style>
+        :root{
+            --box-color:red;
+            --sadow-color:green;
+            --border-color:violet;
+            --maxw:700px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color:var(--box-color);
+            border: 2px solid var(--border-color);
+            box-shadow: 5px 7px var(--sadow-color);
+            margin:2px 9px;
+        }
+        .container{
+            max-width: var(--maxw) ;
+            background-color: var(--border-color);
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more selector in css</title>
+    <style>
+        h1{
+            color: white;
+            background-color: red;
+            text-align: center;
+            font-weight: bold;
+        }
+        /* p{
+            background-color: aquamarine;
+            color: black;
+            font-weight: bold;
+        } */
+        /* div p{
+            background-color: aquamarine;
+            color: black;
+            font-weight: bold;
+        } */
+        /* div ul p{
+            background-color: aquamarine;
+            color: black;
+            font-weight: bold;
+        } */
+        /* div ul li p{
+            background-color: aquamarine;
+            color: black;
+            font-weight: bold;
+        } */
+        /* div>p{
+            background-color: aquamarine;
+            color: black;
+            font-weight: bold;
+        } */
+        div+p{
+            background-color: aquamarine;
+            color: black;
+            font-weight: bold;
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>more selsector in css</h1>
+    <div class="container">
+        <div>
+            <ul>
+                <li>
+                    <p>this a paragraph inside ul and li</p>
+                    <p>all paragrah in li</p>
+                </li>
+                <p>paragrapgh inside ul</p>
+            </ul>
+            <p>this is paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is a paragraph in outer body</p>
+    
+</body>
+</html>

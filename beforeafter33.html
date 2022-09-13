@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseudo selecter</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body{
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: 'Bree Serif', serif;
+        }
+        .navigation{
+            font-size: 20px;
+            display: flex;
+            font-family: 'Bree Serif', serif;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+            font-family: 'Bree Serif', serif;
+        }
+        section{
+            height: 270px;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Bree Serif', serif;
+        
+        }
+        h1{
+            font-size: 4rem;
+            font-family: 'Bree Serif', serif;
+        }
+        p{
+            text-align: center;
+            font-family: 'Bree Serif', serif;
+        }
+        header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* opacity: 0.3; */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="navigation">
+                <li class="item">home</li>
+                <li class="item">about</li>
+                <li class="item">service</li>
+                <li class="item">contract us</li>
+            </ul>
+            
+        </div>
+    </header>
+    <section>
+        <h1>wellcome to sourik </h1>
+        <p>this is your coding world, improve your self and your skill devolop day by day ,in the compiditon world.and all time keep smile on your face,hope you happy at this project on your first web site devolopment.</p>
+
+    </section>
+    
+</body>
+</html>

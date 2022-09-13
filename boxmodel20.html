@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL,PADDING,MARGIN,BORDER</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;       
+         }
+         body{
+             background-color: bisque;
+         }
+        .container{
+            background-color: rgb(161, 180, 216);
+            border: 5px solid rgb(226, 196, 29);
+           /* padding: 23px 76px 89px 199px;
+            margin:54px 67px 87px 155px;*/
+            padding:56px 87px;
+            margin:65px 100px;
+            border-radius: 19px;
+            width: 544px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>this is first content</h1>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic doloremque, quos consequuntur tempore quam architecto rem atque libero dolorem expedita, nemo harum! Unde qui nemo assumenda, porro est debitis veniam!</p>
+    </div>
+
+    <div class="container">
+        <h1>this is second content</h1>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic doloremque, quos consequuntur tempore quam architecto rem atque libero dolorem expedita, nemo harum! Unde qui nemo assumenda, porro est debitis veniam!</p>
+    </div>
+
+    <div class="container">
+        <h1>this is third content</h1>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic doloremque, quos consequuntur tempore quam architecto rem atque libero dolorem expedita, nemo harum! Unde qui nemo assumenda, porro est debitis veniam!</p>
+    </div>
+    
+</body>
+</html>
